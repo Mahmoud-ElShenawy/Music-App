@@ -6,8 +6,8 @@ import static com.m.elshenawy.musicapp.data.api.Constants.Params.ARTIST_ID;
 
 public class Constants {
     public static final String SPOTIFY_API = "https://api.spotify.com/";
-    public static final String API_KEY = "Authorization ";
-    public static final String ACCESS_TOKEN = "BQAE8x3vJqohLsf6VIvXvxVnsRxX1Bl1HBDlyeReFAtcPGV-Lr_gjaGITodVpGpWDdMyNokjBmSLqbgoWiqjkYyl1PD--u5Y-67-xKutabmRmxOnR7ZNQDdCaTbBzMHL2sWOFjS_gvH1MCUZZbA0co64_vNFm_p3iHDq53rGZEMQ9u6yHZOqv-599SMZnIcbxw6Yhm6OxU54HNEW58VBzkwGwbrQEeeKAn6huXgL8BOvquHFibcQL9WNGowUu-wKye585D6EOOS0-COy-J6ME5miGRDvZ72hJEg";
+    public static final String API_KEY = "";
+    public static final String ACCESS_TOKEN = "";
 
     public static final class EndPoint {
         public static final String ARTIST_SEARCH = "v1/search?type=artist";
