@@ -11,6 +11,7 @@ This is Simple Music Player App Using REST-API.
 - ConverterGson
 - Spotify API
 - View Binding
+- Serializer / Deserializer
 
 # Features
 - Connecting With Database
