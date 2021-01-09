@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created By Mahmoud El Shenawy (Email : Mr.Mahmoud.El.Shenawy@Gmail.com)-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/space_default"
+    android:orientation="vertical"
+    android:background="@color/background_dark"
+    tools:context=".view.fragment.PlayerFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageViewAlbumPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/logo" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/playerTrackName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_black"
+            android:paddingStart="@dimen/space_default"
+            android:paddingEnd="@dimen/space_default"
+            android:paddingBottom="@dimen/space_default">
+
+            <TextView
+                android:id="@+id/textViewTrackTitlePlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="@string/track_name"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textViewAlbumTitlePlayer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:text="@string/album_track"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/textViewTrackTitlePlayer"
+                app:layout_constraintStart_toStartOf="@+id/textViewTrackTitlePlayer"
+                app:layout_constraintTop_toBottomOf="@+id/textViewTrackTitlePlayer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBarTimeProgressPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:progressBackgroundTint="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewTimeStart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/space_default"
+            android:paddingEnd="@dimen/space_default"
+            android:text="@string/start_timer"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/textViewTimeEnd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingStart="@dimen/space_default"
+            android:paddingEnd="@dimen/space_default"
+            android:text="@string/start_timer"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButtonPreviewPlayer"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/audio_player_btn_size"
+            android:layout_margin="@dimen/audio_player_btn_margin"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:padding="10dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:contentDescription="@string/previous" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPlayPlayer"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/audio_player_btn_size"
+            android:layout_margin="@dimen/audio_player_btn_margin"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:src="@android:drawable/ic_media_play"
+            android:contentDescription="@string/play" />
+
+        <ImageButton
+            android:id="@+id/imageButtonNextPlayer"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/audio_player_btn_size"
+            android:layout_margin="@dimen/audio_player_btn_margin"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:src="@android:drawable/ic_media_next"
+            android:contentDescription="@string/next" />
+    </LinearLayout>
+</LinearLayout>

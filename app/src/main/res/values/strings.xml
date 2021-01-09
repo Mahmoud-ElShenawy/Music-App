@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MusicApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="find_your_favorite_music">Find Your Favorite Music...</string>
+    <string name="search_artists">Search Artists</string>
+    <string name="search">search</string>
+    <string name="search_hint">Search Artist</string>
+    <string name="search_artist_hint">Search artists.</string>
+    <string name="error_artist_not_found">Artist not found, please check that the name is written in the right way</string>
+    <string name="error_tracks_not_found">Tracks not found, please check that the name is written in the right way</string>
+    <string name="error_internet_connection">Please check your Internet connection!</string>
+    <string name="error_server_internal">Something went wrong with the server.</string>
+    <string name="track_name">Track Name</string>
+    <string name="album_track">Album Track</string>
+    <string name="start_timer">00:00</string>
+    <string name="logo">logo</string>
+    <string name="previous">previous</string>
+    <string name="play">play</string>
+    <string name="next">next</string>
+    <string name="background">background</string>
+    <string name="artist">Artist</string>
+    <string name="hint_followers">%d Followers</string>
+    <string name="top_10_tracks">Top 10 Tracks</string>
+    <plurals name="numberOfFollowers">
+        <item quantity="other">%d Followers</item>
+    </plurals>
+
+</resources>

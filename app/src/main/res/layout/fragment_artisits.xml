@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created By Mahmoud El Shenawy (Email : Mr.Mahmoud.El.Shenawy@Gmail.com)-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_dark"
+    tools:context=".view.fragment.ArtistsFragment">
+
+    <com.m.elshenawy.musicapp.view.widget.ShadowFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_dark">
+
+        <LinearLayout
+            android:id="@+id/headerBarArtists"
+            style="@style/Theme.MusicApp.HeaderBar"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="?actionBarSize"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.m.elshenawy.musicapp.view.widget.AutoRecyclerView
+                android:id="@+id/recycleViewArtists"
+                style="@style/Theme.MusicApp.RecyclerView" />
+
+            <ProgressBar
+                android:id="@+id/progressBarArtists"
+                style="@style/Theme.MusicApp.ProgressBar" />
+
+            <ImageView
+                android:id="@+id/imageViewArtists"
+                style="@style/Theme.MusicApp.ImageView"
+                android:contentDescription="@string/search" />
+
+            <TextView
+                android:id="@+id/textViewLineArtists"
+                style="@style/Theme.MusicApp.TextView"
+                android:text="@string/find_your_favorite_music"
+                android:textSize="@dimen/size_title" />
+
+            <TextView
+                android:id="@+id/textViewSubLineArtists"
+                style="@style/Theme.MusicApp.TextView"
+                android:text="@string/search_artists"
+                android:textSize="@dimen/size_subtitle" />
+        </LinearLayout>
+    </com.m.elshenawy.musicapp.view.widget.ShadowFrameLayout>
+</LinearLayout>

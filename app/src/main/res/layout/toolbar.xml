@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created By Mahmoud El Shenawy (Email : Mr.Mahmoud.El.Shenawy@Gmail.com)-->
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?actionBarSize"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+    android:theme="@style/AppTheme.AppBarOverlay"
+    android:background="@color/colorPrimary"
+    android:id="@+id/toolbarItem">
+
+</androidx.appcompat.widget.Toolbar>
