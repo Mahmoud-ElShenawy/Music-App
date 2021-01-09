@@ -10,6 +10,7 @@ This is Simple Music Player App Using REST-API.
 - Glide
 - ConverterGson
 - Spotify API
+- View Binding
 
 # Features
 - Connecting With Database
