@@ -19,7 +19,7 @@ This is Simple Music Player App Using REST-API.
 - Search For Specific Songs/Albums
 
 # Screenshots 
-There are Some Screenshots to Show How My App Looks. Open Screenshots Folder To See More Pictures
+There are Some Screenshots to Show How My App Looks.
 
 ![](Screenshots/1.png)
 ![](Screenshots/2.png)
